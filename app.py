@@ -12,7 +12,7 @@ from frontend.main import layout
 
 app=dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 #crea la variable app y agrega __name__ y los estilos con bootstrap
-
+server = app.server
 app.layout = layout #se asigna el layout en la variable layout de app
 
 if __name__ == '__main__': #si __name__ y __main__ son iguales
